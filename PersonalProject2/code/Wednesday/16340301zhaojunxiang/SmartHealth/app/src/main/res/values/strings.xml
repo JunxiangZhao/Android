@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Smart Health</string>
+    <string name="title">中山大学智慧健康服务平台</string>
+    <string name="hint">请输入搜索内容</string>
+    <string name="button_text">搜索</string>
+    <string name="title_activity_list_view">ListViewActivity</string>
+    <string name="title_activity_recycler">RecyclerActivity</string>
+
+</resources>

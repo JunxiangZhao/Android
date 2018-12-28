@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:padding="@dimen/widget_margin">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/full_star"
+        android:background="#00000000"
+        android:id="@+id/widget_image"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+
+    <TextView
+        android:id="@+id/appwidget_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/widget_image"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="30dp"
+        android:background="#00000000"
+        android:contentDescription="@string/appwidget_text"
+        android:text="当前没有任何信息"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+</RelativeLayout>

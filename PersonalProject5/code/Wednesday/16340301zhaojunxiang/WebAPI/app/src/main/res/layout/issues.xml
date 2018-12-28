@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".IssuesActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入Token"
+        android:id="@+id/token"
+        android:layout_margin="5dp"
+        android:enabled="false"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/issueTitle"
+        android:layout_margin="5dp"
+        android:hint="输入Title"
+        app:layout_constraintTop_toBottomOf="@+id/token"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/issueBody"
+        android:layout_margin="5dp"
+        android:hint="输入Body"
+        app:layout_constraintTop_toBottomOf="@id/issueTitle"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="增加ISSUE"
+        android:id="@+id/addButton"
+        app:layout_constraintTop_toBottomOf="@+id/issueBody"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="5dp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/issuesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addButton" />
+
+</android.support.constraint.ConstraintLayout>
